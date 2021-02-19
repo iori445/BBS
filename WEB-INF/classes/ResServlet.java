@@ -21,41 +21,36 @@ public class ResServlet extends HttpServlet {
 		req.setCharacterEncoding("Windows-31J");
 
 		//POST要求によって送信されたパラメータを取得する
-				String rtext = req.getParameter("res_text");
+				String text = req.getParameter("res_text");
+				int th_id = Integer.parseInt(req.getParameter("th_id"));
+				int user_id = Integer.parseInt(req.getParameter("user_id"));
 
-				int t_id;
-				t_id = Integer.parseInt(req.getParameter("th_id"));
-				int u_id;
-				u_id = Integer.parseInt(req.getParameter("user_id"));
-				ResBean resb = new ResBean();
+				DBAccess.ResInsert(text, th_id, user_id);
+
+				ArrayList response = DBAccess.ResSelect(th_id);
+
+				req.setAttribute("reslist", response);
+
+				RequestDispatcher dis = getRequestDispatcher("resを表示するjsp");
+
+				dis.forward(req, res);
 
 
-				resb.setRes_text(rtext);
 
 
-				if(rtext != null){
-					Response(t_id, rtext, u_id);
-				}else{
-					/** 本文無しのエラーまたは操作*/
-				}
 
-				req.setAttribute("thread_id", /**ここDBアクセスまで参照以下同じ */ t_id);
-				req.setAttribute("user_id", u_id);
-				req.setAttribute("res_text", rtext);
-
-				RequestDispatcher res_dis = req.getRequestDispatcher("webxmlのリンク")
-
-				res_dis.forward(req, res);
-
-		}
-
-		private void Response(int t, String r, int u){
-			/**オラクルにインサート */
-
-		}
+			}
 
 		public void doGet(HttpServletRequest req, HttpServletResponse res)
 		throws ServletException, IOException {
-			doPost(req, res);
+			int th_id = Integer.parseInt(req.getParameter("th_id"));
+
+			ArrayList response = DBAccess.ResSelect(th_id);
+
+			req.setAttribute("reslist", response);
+
+			RequestDispatcher dis = getRequestDispatcher("resを表示するjsp");
+
+			dis.forward(req, res);
 		}
 }
