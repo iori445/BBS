@@ -2,7 +2,7 @@
 <%@ page pageEncoding="Windows-31J"
 contentType="text/html;charset=Windows-31J" %>
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
 
@@ -33,7 +33,9 @@ body {
   color: #a7a599;
   background: #31302b;
 }
-
+errer{
+    coler: red;
+}
 /*Login form style*/
 /* === Logo === */
 .logo {
@@ -191,7 +193,7 @@ body {
   border: none;
   cursor: pointer;
   position: relative;
-  margin-bottom: 2px;
+  margin-bottom: 20px;
   -webkit-animation: shadowFadeOut 0.4s;
   -moz-animation: shadowFadeOut 0.4s;
 }
@@ -315,22 +317,26 @@ body {
 
 <body translate="no" >
   <div class="login">
-    <h1>ログイン</h1>
+    <h1>登録完了</h1>
 
-    <form class="form" method="post" action="#">
+    <!--<form class="form" method="post" action="#">
 
       <p class="field">
-        <input type="text" name="login" placeholder="ユーザー名" required/>
+        <input type="text" name="login" placeholder="Username" required/>
         <i class="fa fa-user"></i>
       </p>
 
       <p class="field">
-        <input type="password" name="password" placeholder="パスワード" required/>
+        <input type="password" name="password" placeholder="Password" required/>
         <i class="fa fa-lock"></i>
       </p>
+    -->
+    　<br><br><br><br>
+      <div class="errer">
+        <!--<pre>                 入力に誤りがあるか、登録されていません。</pre>-->
+      </div>
+      <p class="submit"><input type="submit" name="sent" value="ログイン画面へ"></p>
 
-      <p class="submit"><input type="submit" name="sent" value="ログイン"></p>
-      <p class="submit"><input type="submit" name="sent" value="新規登録"></p>
 
     </form>
   </div> <!--/ Login-->

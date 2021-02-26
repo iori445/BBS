@@ -315,7 +315,7 @@ body {
 
 <body translate="no" >
   <div class="login">
-    <h1>ログイン</h1>
+    <h1>新規登録</h1>
 
     <form class="form" method="post" action="#">
 
@@ -329,8 +329,8 @@ body {
         <i class="fa fa-lock"></i>
       </p>
 
-      <p class="submit"><input type="submit" name="sent" value="ログイン"></p>
-      <p class="submit"><input type="submit" name="sent" value="新規登録"></p>
+      
+      <p class="submit"><input type="submit" name="sent" value="登録する"></p>
 
     </form>
   </div> <!--/ Login-->

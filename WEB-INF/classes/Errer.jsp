@@ -317,10 +317,10 @@ errer{
 
 <body translate="no" >
   <div class="login">
-    <h1>Login</h1>
+    <h1>ログイン失敗</h1>
 
     <form class="form" method="post" action="#">
-
+      <!--
       <p class="field">
         <input type="text" name="login" placeholder="Username" required/>
         <i class="fa fa-user"></i>
@@ -330,11 +330,12 @@ errer{
         <input type="password" name="password" placeholder="Password" required/>
         <i class="fa fa-lock"></i>
       </p>
-
+    -->
+    　<br><br><br><br>
       <div class="errer">
-        <p>入力に誤りがあるか、登録されていません。</p>
+        <pre>                 入力に誤りがあるか、登録されていません。</pre>
       </div>
-      <p class="submit"><input type="submit" name="sent" value="Login"></p>
+      <p class="submit"><input type="submit" name="sent" value="ログイン画面へ"></p>
 
 
     </form>
