@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    version="3.1" metadata-complete="true">
+
+<servlet>
+    <servlet-name>ThreadServlet</servlet-name>
+	<servlet-class>ThreadServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>ThreadServlet</servlet-name>
+	<url-pattern>/ThreadServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>createthread</servlet-name>
+    <jsp-file>/createthread.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+    <servlet-name>createthread</servlet-name>
+    <url-pattern>/createthread</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>threadlist</servlet-name>
+    <jsp-file>/threadlist.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+    <servlet-name>threadlist</servlet-name>
+    <url-pattern>/threadlist</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>GenreServlet</servlet-name>
+	<servlet-class>GenreServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>GenreServlet</servlet-name>
+	<url-pattern>/GenreServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>creategenre</servlet-name>
+    <jsp-file>/creategenre.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+    <servlet-name>creategenre</servlet-name>
+    <url-pattern>/creategenre</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>genre</servlet-name>
+    <jsp-file>/genre.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+    <servlet-name>genre</servlet-name>
+    <url-pattern>/genre</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>register</servlet-name>
+    <jsp-file>/register.jsp</jsp-file>
+</servlet>
+<servlet-mapping>
+    <servlet-name>register</servlet-name>
+    <url-pattern>/register</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>UserServlet</servlet-name>
+	<servlet-class>UserServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>UserServlet</servlet-name>
+	<url-pattern>/UserServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>time</servlet-name>
+    <jsp-file>/time.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>time</servlet-name>
+    <url-pattern>/time</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>random</servlet-name>
+    <jsp-file>/random.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>random</servlet-name>
+    <url-pattern>/random</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>inputtest</servlet-name>
+    <jsp-file>/input.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>inputtest</servlet-name>
+    <url-pattern>/inputtest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>registtest</servlet-name>
+    <servlet-class>RegistTestServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>registtest</servlet-name>
+    <url-pattern>/registtest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>registresult</servlet-name>
+    <jsp-file>/registresult.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>registresult</servlet-name>
+    <url-pattern>/registresult</url-pattern>
+</servlet-mapping>
+
+</web-app>
