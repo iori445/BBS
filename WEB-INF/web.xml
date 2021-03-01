@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+ http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+ version="3.1" metadata-complete="true">
+
+<servlet>
+    <servlet-name>time</servlet-name>
+    <jsp-file>/time.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>time</servlet-name>
+    <url-pattern>/time</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>random</servlet-name>
+    <jsp-file>/random.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>random</servlet-name>
+    <url-pattern>/random</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>inputtest</servlet-name>
+    <jsp-file>/input.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>inputtest</servlet-name>
+    <url-pattern>/inputtest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>registtest</servlet-name>
+    <servlet-class>RegistTestServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>registtest</servlet-name>
+    <url-pattern>/registtest</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>registresult</servlet-name>
+    <jsp-file>/registresult.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>registresult</servlet-name>
+    <url-pattern>/registresult</url-pattern>
+</servlet-mapping>
+
+/*
+<servlet>
+    <servlet-name></servlet-name>
+    <jsp-file></jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name></servlet-name>
+    <url-pattern></url-pattern>
+</servlet-mapping>
+*/
+</web-app>
